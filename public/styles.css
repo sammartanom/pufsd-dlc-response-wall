@@ -166,7 +166,7 @@ main {
 
   appearance: none;
 
-  background: #ffffff;
+  background: #ffffff !important;
   color: var(--ink);
 
   font-family: "Inter", system-ui, sans-serif;
@@ -197,7 +197,7 @@ main {
 .prompt textarea:focus {
   border-color: rgba(3, 108, 62, 0.62);
 
-  background: #ffffff;
+  background: #ffffff !important;
 
   box-shadow:
     0 0 0 4px rgba(3, 108, 62, 0.08),
