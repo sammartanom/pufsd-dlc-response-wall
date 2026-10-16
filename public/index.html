@@ -88,4 +88,167 @@
             name="response3"
             maxlength="700"
             rows="3"
-        
+            required
+            placeholder="Your response"
+          ></textarea>
+
+          <span class="character-count">
+            <output data-count-for="response3">0</output>/700
+          </span>
+        </div>
+      </div>
+
+
+      <div class="honeypot" aria-hidden="true">
+        <label for="website">Website</label>
+
+        <input
+          id="website"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+        >
+      </div>
+
+
+      <div class="actions">
+
+        <p
+          id="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <button id="submit-button" type="submit">
+          <span>Submit responses</span>
+        </button>
+
+      </div>
+
+    </form>
+
+  </main>
+
+
+  <section
+    class="responses"
+    aria-labelledby="responses-title"
+  >
+
+    <div class="responses-header">
+
+      <div class="responses-title-row">
+
+        <div>
+          <p class="brand">
+            Digital Learning Collective
+          </p>
+
+          <h2 id="responses-title">
+            Responses
+          </h2>
+        </div>
+
+        <p
+          id="response-count"
+          aria-live="polite"
+        ></p>
+
+      </div>
+
+
+      <div
+        class="view-switcher"
+        role="tablist"
+        aria-label="Choose response view"
+      >
+
+        <button
+          class="view-button active"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          data-view="themes"
+        >
+          By prompt
+        </button>
+
+        <button
+          class="view-button"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-view="people"
+        >
+          By response
+        </button>
+
+        <button
+          class="view-button"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-view="focus"
+        >
+          Focus
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div id="loading" class="responses-status">
+      Loading responses…
+    </div>
+
+
+    <div
+      id="empty"
+      class="responses-status"
+      hidden
+    >
+      <p>No responses yet.</p>
+    </div>
+
+
+    <div
+      id="response-grid"
+      class="themes-view"
+      aria-live="polite"
+    ></div>
+
+
+    <div
+      id="focus-controls"
+      class="focus-controls"
+      hidden
+    >
+
+      <button
+        id="focus-prev"
+        type="button"
+        aria-label="Previous response"
+      >
+        ←
+      </button>
+
+      <span id="focus-position"></span>
+
+      <button
+        id="focus-next"
+        type="button"
+        aria-label="Next response"
+      >
+        →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  /app.jsscript>
+
+</body>
+</html>
