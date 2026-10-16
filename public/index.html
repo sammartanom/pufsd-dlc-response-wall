@@ -1,38 +1,33 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#036C3E">
+  <meta name="theme-color" content="#036c3e">
 
   <title>Pleasantville Schools | Digital Learning Collective</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
-    href="https://fonts.googleapis.com">
+    href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&amp;family=Inter:wght@400..700&amp;display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
-
   <main>
-
-    <section class="introantville Schools</p>
-
+    <section class="intro">
+      <p class="brand">Pleasantville Schools</p>
       <h1>Digital Learning Collective</h1>
-
       <p class="instruction">
         Complete each sentence. Responses are anonymous.
       </p>
     </section>
 
-
     <form id="response-form" novalidate>
-
       <div class="prompt">
         <label for="response1">
           We believe Pleasantville students are best served when technology…
@@ -53,7 +48,6 @@
           </span>
         </div>
       </div>
-
 
       <div class="prompt">
         <label for="response2">
@@ -76,7 +70,6 @@
         </div>
       </div>
 
-
       <div class="prompt">
         <label for="response3">
           By June 2027, we will know that we have succeeded if…
@@ -98,21 +91,18 @@
         </div>
       </div>
 
-
       <div class="honeypot" aria-hidden="true">
         <label for="website">Website</label>
-
         <input
           id="website"
           name="website"
+          type="text"
           tabindex="-1"
           autocomplete="off"
         >
       </div>
 
-
       <div class="actions">
-
         <p
           id="form-message"
           role="status"
@@ -122,47 +112,32 @@
         <button id="submit-button" type="submit">
           <span>Submit responses</span>
         </button>
-
       </div>
-
     </form>
-
   </main>
-
 
   <section
     class="responses"
     aria-labelledby="responses-title"
   >
-
     <div class="responses-header">
-
       <div class="responses-title-row">
-
         <div>
-          <p class="brand">
-            Digital Learning Collective
-          </p>
-
-          <h2 id="responses-title">
-            Responses
-          </h2>
+          <p class="brand">Digital Learning Collective</p>
+          <h2 id="responses-title">Responses</h2>
         </div>
 
         <p
           id="response-count"
           aria-live="polite"
         ></p>
-
       </div>
-
 
       <div
         class="view-switcher"
         role="tablist"
         aria-label="Choose response view"
       >
-
         <button
           class="view-button active"
           type="button"
@@ -192,16 +167,12 @@
         >
           Focus
         </button>
-
       </div>
-
     </div>
-
 
     <div id="loading" class="responses-status">
       Loading responses…
     </div>
-
 
     <div
       id="empty"
@@ -211,20 +182,17 @@
       <p>No responses yet.</p>
     </div>
 
-
     <div
       id="response-grid"
       class="themes-view"
       aria-live="polite"
     ></div>
 
-
     <div
       id="focus-controls"
       class="focus-controls"
       hidden
     >
-
       <button
         id="focus-prev"
         type="button"
@@ -242,13 +210,9 @@
       >
         →
       </button>
-
     </div>
-
   </section>
 
-
-  /app.jsscript>
-
+  <script src="/app.js" defer></script>
 </body>
 </html>
