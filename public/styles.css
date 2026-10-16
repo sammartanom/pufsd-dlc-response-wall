@@ -107,7 +107,7 @@ main {
   padding-bottom: 94px;
 }
 
-.prompt {
+. {
   display: block;
 
   padding: 31px 0 35px;
@@ -150,7 +150,7 @@ main {
 
   appearance: none;
 
-  background: var(--field);
+  background: #ffffff;
   color: var(--ink);
 
   font-family: "Inter", system-ui, sans-serif;
