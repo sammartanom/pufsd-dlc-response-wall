@@ -1,0 +1,15 @@
+{
+  "name": "post-its",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-17",
+  "ai": {
+    "binding": "AI"
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  }
+}

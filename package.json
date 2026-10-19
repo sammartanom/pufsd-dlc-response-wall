@@ -1,14 +1,10 @@
 {
-  "name": "pufsd-dlc-response-wall",
-  "version": "1.0.0",
+  "name": "post-its",
   "private": true,
   "scripts": {
-    "dev": "wrangler pages dev public --d1 DB=pufsd-dlc-responses",
-    "deploy": "wrangler pages deploy public --project-name pufsd-dlc-response-wall",
-    "db:local": "wrangler d1 execute pufsd-dlc-responses --local --file=./schema.sql",
-    "db:remote": "wrangler d1 execute pufsd-dlc-responses --remote --file=./schema.sql"
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "wrangler": "^4.45.0"
+    "wrangler": "^4.0.0"
   }
 }
